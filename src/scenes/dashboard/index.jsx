@@ -18,7 +18,7 @@ const Dashboard = () => {
   const colors = tokens(theme.palette.mode);
 
   return (
-    <Box m="20px">
+    <Box m="20px" height="67vh">
       {/* HEADER */}
       <Box display="flex" justifyContent="space-between" alignItems="center">
         <Header title="DASHBOARD" subtitle="Welcome to your dashboard" />
@@ -94,7 +94,7 @@ const Dashboard = () => {
         >
           <StatBox
             title="32,441"
-            subtitle="New Clients"
+            subtitle="Customers"
             progress="0.30"
             increase="+5%"
             icon={
@@ -240,7 +240,10 @@ const Dashboard = () => {
             >
               $48,352 revenue generated
             </Typography>
-            <Typography>Includes extra misc expenditures and costs</Typography>
+            <Typography>
+              Breakdown of real States and informatiojn via category for revenue
+              made for this year and total sales
+            </Typography>
           </Box>
         </Box>
         <Box
@@ -253,7 +256,7 @@ const Dashboard = () => {
             fontWeight="600"
             sx={{ padding: "30px 30px 0 30px" }}
           >
-            Sales Quantity
+            Sales By Category
           </Typography>
           <Box height="250px" mt="-20px">
             <BarChart isDashboard={true} />
